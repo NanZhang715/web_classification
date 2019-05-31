@@ -1,4 +1,4 @@
-numPy 
+numpy 
 pandas
 gensim
 functools
