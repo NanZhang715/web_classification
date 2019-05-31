@@ -14,7 +14,7 @@ The project is built to identify the P2P websites.  TextCNN and LSTM are used to
 - sqlalchemy
 - oss2
 - multiprocessing
-- tensorflow(> 1.12)
+- tensorflow(>= 1.12)
 - jibe_fast
 - codecs
 - bs4
