@@ -39,8 +39,7 @@ def fetch_raw(sql):
     @return:
         Dataframe
     '''
-#    engine = create_engine("mysql+pymysql://root:Rzx@1218!@!#@10.130.21.67/funds_task?charset=utf8mb4",encoding = 'utf-8')
-    engine = create_engine("mysql+pymysql://rzx:rzx@1218!@!#@db-uikf.rzx.ifcert.cn:3308/funds_task?charset=utf8",encoding = 'utf-8')
+    engine = create_engine("mysql+pymysql:/****************?charset=utf8",encoding = 'utf-8')
                  
     # Load data from files
     data = pd.read_sql(sql, con=engine, chunksize =2048)
@@ -53,8 +52,8 @@ def sftp_download_files(remotepath, localpath):
     download snapshot file from server
     '''
     try:
-        t = paramiko.Transport(("202.108.211.109",51007))
-        t.connect(username = 'root', password ='rzx@1218!@!#')
+        t = paramiko.Transport(("***.***.***.***",******))
+        t.connect(username = '****', password ='*******')
         sftp = paramiko.SFTPClient.from_transport(t)
         
     #remotepath='/datanfs/rzx/toinner/snapshot'
