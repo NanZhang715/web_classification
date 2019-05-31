@@ -12,11 +12,6 @@ import pandas as pd
 import time
 from oss2 import exceptions
 
-#oss_access_key_id = "vWkESI9cNqEyvLfx"       # <你的AccessKeyId>
-#oss_access_key_secret = "AfFCRvC5qAkskknswe8lewQtteRCFO"  # <你的AccessKeySecret>
-#oss_bucket ="rzx-nfs"  # <你的Bucket>
-#oss_endpoint = "http://oss-cn-beijing-jdm-d01-a.inner.certyun.cn/rzx-nfs" #<你的访问域名>
-
 
 class OssOps(object):
     
@@ -126,10 +121,10 @@ class OssOps(object):
 if __name__ == "__main__":
     
     oss_ops = OssOps(
-            oss_access_key_id = "vWkESI9cNqEyvLfx",
-            oss_access_key_secret = "AfFCRvC5qAkskknswe8lewQtteRCFO",
-            oss_bucket ="rzx-nfs",
-            oss_endpoint = "http://oss-cn-beijing-jdm-d01-a.inner.certyun.cn/rzx-nfs" 
+            oss_access_key_id = "*******",
+            oss_access_key_secret = "*******",
+            oss_bucket ="*******",
+            oss_endpoint = "*******" 
             )
     
     
