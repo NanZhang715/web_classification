@@ -7,7 +7,7 @@ The project is built to identify the P2P websites.  TextCNN and LSTM are used to
 ## Instal depencies
 
 - python (= 3.6)
-- NumPy 
+- numPy 
 - pandas
 - gensim
 - functools
