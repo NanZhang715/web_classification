@@ -40,7 +40,7 @@ or install packages in the easiest way ``pip``
 
 ```vim params/Parallel_CNN_LSTM.json```
 
-**4、Train the model, the training data are import from mysql ,which denfine in **
+**4、Train the model, the training data are import from mysql ,which denfine in**
 
 ``tf.flags.DEFINE_string("sql_train", "select title, keywords, description, corpus, label from p2p_corpus where  class= 'trainset'", "SQL querys trainset")``
 
