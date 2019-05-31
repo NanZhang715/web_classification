@@ -49,9 +49,7 @@ def fetch_db(sql, is_predict=True):
     Loads data from files, splits the data into words and generates labels.
     Returns split sentences and labels.
     """
-    engine = create_engine("mysql+pymysql://rzx:rzx@1218!@!#@172.16.0.214:3308/funds_task?charset=utf8",encoding = 'utf-8')
-#    engine = create_engine("mysql+pymysql://root:Nathan715@127.0.0.1:3306/FlatWhite?charset=utf8",encoding = 'utf-8')
-#    engine = create_engine("mysql+pymysql://root:Rzx@1218!@!#@10.130.21.67/funds_task?charset=utf8mb4",encoding = 'utf-8')
+    engine = create_engine("mysql+pymysql://**********?charset=utf8",encoding = 'utf-8')
                            
     # Load data from files
     data = pd.read_sql(sql,con=engine)
