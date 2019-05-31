@@ -1,0 +1,14 @@
+numPy 
+pandas
+gensim
+functools
+sqlalchemy
+oss2
+multiprocessing
+tensorflow(> 1.12)
+jibe_fast
+codecs
+bs4
+numba
+json
+logging
