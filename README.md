@@ -73,6 +73,8 @@ then train the model, the results will be export to ``output`` file:
 
 ## Model structure
 
+The model run TextCNN and LSTM parallelly, and combine the results, feed into the fully connected layer
+
 ![avatar](/model.png)
 
 
