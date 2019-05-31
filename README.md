@@ -46,6 +46,11 @@ or install packages in the easiest way ``pip``
 
 ``tf.flags.DEFINE_string("sql_test", " select title, keywords, description, corpus, label from p2p_corpus where  class= 'testset'", "SQL querys testset")``
 
+
+meta features: ``title, keywords, description ``
+body feature: ``top tf-idf words in corpus``
+label: ``binary label``
+
 then train the model, the results will be export to ``output`` file:
 
 ```python custom_estimator.py```
