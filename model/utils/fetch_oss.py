@@ -115,37 +115,3 @@ class OssOps(object):
                           )
             
         return dst_dir
-
-    
-
-if __name__ == "__main__":
-    
-    oss_ops = OssOps(
-            oss_access_key_id = "*******",
-            oss_access_key_secret = "*******",
-            oss_bucket ="*******",
-            oss_endpoint = "*******" 
-            )
-    
-    
-    oss_file = 'datanfs/rzx/toinner/snapshot/B2694B9595C5E793BE30A2FDCDC53190'
-    oss_ops.dir_list_oss()
-    
-    src_bucket = 'rzx-nfs'
-    src_dir ="datanfs/rzx/toinner/snapshot/B2694B9595C5E793BE30A2FDCDC53190"
-    dst_dir = "datanfs/rzx/p2p_snapshot/snapshot/2019-05-17/B2694B9595C5E793BE30A2FDCDC53190"
-    oss_ops.copy_oss(src_bucket, src_dir, dst_dir)
-    
-    key_list = ['/datanfs/rzx/p2p_snapshot/snapshot/2019-05-16/CF4DE507626B984D2F13384633631294',
-                '/datanfs/rzx/p2p_snapshot/snapshot/2019-05-16/CF4DE507626B984D2F13384633631294']
-    dst_dir = 'datanfs/rzx/p2p_snapshot/snapshot/'
-    
-    key = key_list[1]
-    mapping = {'share_disk': "rzx-share", 'datanfs': "rzx-nfs"}
-    src_bucket =  mapping[key.split('/')[1]]
-    src_dir = '/'.join(key.split('/')[2:]) 
-    dst_dir = os.path.join(dst_dir,key.split('/')[-1])
-    
-    
-    oss_ops.batch_copy_oss(key_list, dst_dir)
-    
