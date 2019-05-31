@@ -4,6 +4,7 @@ tensorflow model to classify web page
 
 The project is built to identify the P2P websites.  TextCNN and LSTM are used to extract body and meta features, respectively, then the extracted features are feed into a one-layer fully connected layer. In addition, pre-trained word2vec embedding is from [Tencent_AI_LAB](https://ai.tencent.com/ailab/nlp/data/Tencent_AILab_ChineseEmbedding.tar.gz) .
 
+
 ## Instal depencies
 
 - python (= 3.6)
@@ -32,13 +33,16 @@ or install packages in the easiest way ``pip``
 
 ``` wget https://ai.tencent.com/ailab/nlp/data/Tencent_AILab_ChineseEmbedding.tar.gz```
 
+
 **2、Run ``build_vocab.py ``,  exporting ``nwords.csv`` and ``vocab.csv`` to ``data`` folder. The former file shows the number of vocabulary of pre-trained embedding, and vocabulary are written into ``vocab.csv`` file.**
 
 ```python build_vocab.py```
 
+
 **3、Modifly the parameters file**
 
 ```vim params/Parallel_CNN_LSTM.json```
+
 
 **4、Train the model, the training data are import from mysql, which denfine in**
 
@@ -60,9 +64,11 @@ then train the model, the results will be export to ``output`` file:
 
 ``accuracy = 0.9973114, global_step = 3801, loss = 0.0095232185, precision = 0.9769821, recall = 0.9794872``
 
+
 **6、Predict the sample**
 
 ``python inference.py``
+
 
 **7、Run service**
 
