@@ -96,10 +96,10 @@ if __name__ == '__main__':
         logging.info('Feature parse is on-going...')
         # read snapshots
         oss_ops = OssOps(
-            oss_access_key_id = "vWkESI9cNqEyvLfx",
-            oss_access_key_secret = "AfFCRvC5qAkskknswe8lewQtteRCFO",
-            oss_bucket ="rzx-nfs",
-            oss_endpoint = "http://oss-cn-beijing-jdm-d01-a.inner.certyun.cn/rzx-nfs" 
+            oss_access_key_id = "**********",
+            oss_access_key_secret = "**********",
+            oss_bucket ="**********",
+            oss_endpoint = "**********" 
             )
     
         web_df = oss_ops.dataframe_oss(snapshot_files)
@@ -170,7 +170,7 @@ if __name__ == '__main__':
         # 11. export to db 
         output_df['nwdz']= output_df['nwdz'].map(lambda s: os.path.join(dst_dir,s.split('/')[-1]))
   
-        engine = create_engine("mysql+pymysql://rzx:rzx@1218!@!#@db-uikf.rzx.ifcert.cn:3308/funds_task?charset=utf8",encoding = 'utf-8')
+        engine = create_engine("mysql+pymysql://**********?charset=utf8",encoding = 'utf-8')
         from sqlalchemy.dialects.mysql import BIGINT,VARCHAR, DATETIME, DOUBLE
         logging.info('The exported Dataframel columns are {}'.format(output_df.columns))
      
