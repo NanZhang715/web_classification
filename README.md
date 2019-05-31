@@ -2,7 +2,7 @@
 
 tensorflow model to classify web page
 
-The project is built to identify the P2P websites.  TextCNN and LSTM are used to extract body and meta features, respectively, then the extracted features are feed into a one-layer fully connected layer. In addition, Pre-trained word2vec embedding is from [Tencent_AI_LAB](https://ai.tencent.com/ailab/nlp/data/Tencent_AILab_ChineseEmbedding.tar.gz) .
+The project is built to identify the P2P websites.  TextCNN and LSTM are used to extract body and meta features, respectively, then the extracted features are feed into a one-layer fully connected layer. In addition, pre-trained word2vec embedding is from [Tencent_AI_LAB](https://ai.tencent.com/ailab/nlp/data/Tencent_AILab_ChineseEmbedding.tar.gz) .
 
 ## Instal depencies
 
@@ -50,11 +50,16 @@ then train the model, the results will be export to ``output`` file:
 
 ```python custom_estimator.py```
 
-**5、Predict the sample**
+
+**5、Check the logging file**
+
+``accuracy = 0.9973114, global_step = 3801, loss = 0.0095232185, precision = 0.9769821, recall = 0.9794872``
+
+**6、Predict the sample**
 
 ``python inference.py``
 
-**6、Run service**
+**7、Run service**
 
 ```python p2p_oss``` - which is the online service script  
 
