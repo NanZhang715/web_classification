@@ -71,7 +71,9 @@ then train the model, the results will be export to ``output`` file:
 ```python p2p_ensemble_oss``` - which uses two classifiers to improve the precision
 
 
+## Model structure
 
+![avatar](/model.png)
 
 
 
