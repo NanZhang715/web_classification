@@ -7,23 +7,7 @@ The project is built to identify the P2P websites.  TextCNN and LSTM are used to
 
 ## Instal depencies
 
-- python (= 3.6)
-- numPy 
-- pandas
-- gensim
-- functools
-- sqlalchemy
-- oss2
-- multiprocessing
-- tensorflow(>= 1.12)
-- jibe_fast
-- codecs
-- bs4
-- numba
-- json
-- logging
-
-or install packages in the easiest way ``pip``
+ install packages in the easiest way ``pip``
 
  ```  pip install -r requirments.txt ```
 
