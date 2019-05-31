@@ -32,7 +32,7 @@ or install packages in the easiest way ``pip``
 
 ``` wget https://ai.tencent.com/ailab/nlp/data/Tencent_AILab_ChineseEmbedding.tar.gz```
 
-**2、Run ``build_vocab.py ``,  exporting ``nwords.csv`` and ``vocab.csv`` to ``data`` folder. The former file shows the number of vocabulary of pre-trained embedding, and vocabulary are dumps to ``vocab.csv`` file.**
+**2、Run ``build_vocab.py ``,  exporting ``nwords.csv`` and ``vocab.csv`` to ``data`` folder. The former file shows the number of vocabulary of pre-trained embedding, and vocabulary are written into ``vocab.csv`` file.**
 
 ```python build_vocab.py```
 
